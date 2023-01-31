@@ -40,7 +40,7 @@ if st.sidebar.button("EXECUTAR"):
           
 
     else:
-        df = pd.read_excel('/gasparini.xlsx')
+        df = pd.read_excel('trader-objetivo/gasparini.xlsx')
 
     st.sidebar.title(opcao_selecionada)
      # Mostrando a opção selecionada pelo usuário

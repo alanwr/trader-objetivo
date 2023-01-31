@@ -32,15 +32,15 @@ amostra = 200
 # Atribuir a base de dados ao sistema operacional selecionado
 if st.sidebar.button("EXECUTAR"):    
     if opcao_selecionada == "Sistema MMA 9":
-        df = pd.read_excel('\gasparini.xlsx')
+        df = pd.read_excel('gasparini.xlsx')
         amostra = int(df.shape[0] * 0.15)
     elif opcao_selecionada == "Canal de Keltner":
-        df = pd.read_excel('\gasparini.xlsx')
+        df = pd.read_excel('/gasparini.xlsx')
         amostra = int(df.shape[0] * 0.15)
           
 
     else:
-        df = pd.read_excel('gasparini.xlsx')
+        df = pd.read_excel('/gasparini.xlsx')
 
     st.sidebar.title(opcao_selecionada)
      # Mostrando a opção selecionada pelo usuário
